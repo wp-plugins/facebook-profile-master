@@ -2,7 +2,7 @@
 /**
 Plugin Name: Facebook Profile Master
 Plugin URI: http://wordpress.techgasp.com/facebook-profile-master/
-Version: 2.0
+Version: 2.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: facebook-profile-master
@@ -101,7 +101,7 @@ require_once('techgasp-facebookprofilemaster-widget.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
