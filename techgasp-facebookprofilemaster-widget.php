@@ -30,7 +30,7 @@ function widget( $args, $instance ) {
 		echo $before_title . $name . $after_title;
 		//Display Facebook Follow
 	if ( $show_facebook_follow )
-			echo '<iframe src="//www.facebook.com/plugins/follow?href='.$facebook_user_page.'&amp;layout=button_count&amp;show_faces=false&amp;colorscheme=light&amp;width=450&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:visible; width:450px; height:80px;" allowTransparency="true"></iframe>';
+			echo '<iframe src="//www.facebook.com/plugins/follow?href='.$facebook_user_page.'&amp;layout=button_count&amp;show_faces=false&amp;colorscheme=light&amp;width=450&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:visible; width:450px; height:21px;" allowTransparency="true"></iframe>';
 		echo $after_widget;
 }
 	//Update the widget
