@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, techgasp, shortcode, facebook, facebook profile, facebook user, facebook badge, facebook follow, facebook photo, facebook profile badge, facebook profile photo
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 2.3
+Tested up to: 3.6.1
+Stable tag: 4.0
 License: GPLv2 or later
 
 Facebook Profile Master gives you full control over all Facebook User Profile plugins, Facebook User Badges and Facebook Follow Button.
@@ -21,9 +21,10 @@ The plugin uses the new Facebook API and is built-in html5 and iframe. Once agai
 
 Main Features: The viral plugin for facebook user profiles - Asynchronous Load - Built-in html5- No Javascript - Profile Badge - Photo Badge - Like Badge - Page Badge - Follow Button- Shortcode Framework ready, to publish inside pages and posts
 
+**Facebook User Profiles for Wordpress**
+
 IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
-**Facebook User Profiles for Wordpress**
 
 **LITE Version Contains:**
 
@@ -32,33 +33,45 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 **ADVANCED Version Contains:**
 
-[Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
-
 * Display or hide Widget Title
 * Facebook Profile Badge
 * Facebook Photo Badge
 * Facebook Like Badge
 * Facebook Page Badge
 * Facebook Follow Button
-* Shortcode Framework to publish widget inside pages and posts
+* Shortcode Framework v2. Publish widget inside pages and posts
+* [Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
-[VISIT OUR WEBSITE FOR MORE PROFESSIONAL PLUGINS](http://wordpress.techgasp.com)
+**ONLINE DEMO**
+
+* Right of the page, sidebar widget
+* Inside the post, with shortcode framework v2
+* [Demo Link](http://wordpress.techgasp.com/facebook-profile-master/)
+
+**More High Quality Plugins?**
+
+* For professional wordpress websites
+* Tested for fast page load times and SEO
+* Errors and conflicts free. NO JAVASCRIPT or AJAX
+* [Click Here](http://wordpress.techgasp.com/buy-all-techgasp-wordpress-plugins/)
+
 
 == Installation ==
 
-1. Upload everything into the "/wp-content/plugins/" directory of your WordPress site.
+1. Use the Wordpress Installer, Updater.
 2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Facebook Profile Master" to configure the widget and template widget position.
+3. Visit the "Widget Page | Facebook Profile Master" to configure the settings and your template widget position.
+4. [Facebook Profile Master Documentation](http://wordpress.techgasp.com/facebook-profile-master-documentation)
 
 
 == Frequently Asked Questions ==
 
 = Can I show Facebook Pages? =
-No, the plugin is intended for Facebook User Profiles. To show Fabecook Pages check our Facebook Master wordpress plugin.
+No, the plugin is intended for Facebook User Profiles. To show Facebook Pages check our Facebook Master wordpress plugin.
 * [Facebook Master Link](http://wordpress.techgasp.com/facebook-master/)
 
 = Can I show Facebook Comments? =
-No, the plugin is intended for Facebook User Profiles.  To show Fabecook Comments check our Facebook Comments Master wordpress plugin.
+No, the plugin is intended for Facebook User Profiles.  To show Facebook Comments check our Facebook Comments Master wordpress plugin.
 * [Facebook Comments Master Link](http://wordpress.techgasp.com/facebook-comments-master/)
 
 = Can I show Facebook Groups? =
@@ -67,15 +80,20 @@ No, the plugin is intended for Facebook User Profiles.
 = Issues with display =
 Please update to latest plugin version. Up-to-date API's are available
 
-= WHERE IS THE SHORTCODE? =
-* ADVANCED Version contains shortcode framework to use the widget inside your pages and posts.
+= Where is the shortcode? =
+* Advanced Version contains the shortcode framework v2
+* Insert the shortcode into any page or post. [facebook-profile-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
-= Need More Help =
+= What's this Shortcode Framework v2 =
+* It's a framework developed by TechGasp and built upon wordpress marvellous resources
+* Allows users to quickly and easily display plugins or widgets inside their pages and posts
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2
+* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
 
-* [ABOUT DOCUMENTATION](http://wordpress.techgasp.com)
-* [ABOUT INSTALLATION](http://wordpress.techgasp.com)
-* [SUPPORT](http://wordpress.techgasp.com/support)
+= Need More Help =
+* [Facebook Profile Master Documentation](http://wordpress.techgasp.com/facebook-profile-master-documentation)
+* [Support](http://wordpress.techgasp.com/support)
 
 
 == Screenshots ==
@@ -89,6 +107,12 @@ Please update to latest plugin version. Up-to-date API's are available
 
 
 == Changelog ==
+
+= 4.0 =
+* Implementing New Shortcode Framework v2. Shortcode box will now be available when editing a page or a post
+
+= 3.5 =
+* Implementing advanced updater
 
 = 2.3 =
 * Patching strict standards in WP_DEBUG mode
@@ -113,6 +137,9 @@ Please update to latest plugin version. Up-to-date API's are available
 
 
 == Upgrade Notice ==
+
+= 4.0 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework
 
 = 2.0 =
 * IMPORTANT Implemented a better framework
