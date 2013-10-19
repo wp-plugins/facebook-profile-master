@@ -67,12 +67,10 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 == Frequently Asked Questions ==
 
 = Can I show Facebook Pages? =
-No, the plugin is intended for Facebook User Profiles. To show Facebook Pages check our Facebook Master wordpress plugin.
-* [Facebook Master Link](http://wordpress.techgasp.com/facebook-master/)
+No, the plugin is intended for Facebook User Profiles. To show Facebook Pages check our Facebook Master wordpress plugin. [Facebook Master Link](http://wordpress.techgasp.com/facebook-master/)
 
 = Can I show Facebook Comments? =
-No, the plugin is intended for Facebook User Profiles.  To show Facebook Comments check our Facebook Comments Master wordpress plugin.
-* [Facebook Comments Master Link](http://wordpress.techgasp.com/facebook-comments-master/)
+No, the plugin is intended for Facebook User Profiles.  To show Facebook Comments check our Facebook Comments Master wordpress plugin. [Facebook Comments Master Link](http://wordpress.techgasp.com/facebook-comments-master/)
 
 = Can I show Facebook Groups? =
 No, the plugin is intended for Facebook User Profiles.
