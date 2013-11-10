@@ -2,7 +2,7 @@
 /**
 Plugin Name: Facebook Profile Master
 Plugin URI: http://wordpress.techgasp.com/facebook-profile-master/
-Version: 4.0
+Version: 4.0.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: facebook-profile-master
@@ -34,22 +34,13 @@ define('FACEBOOK_PROFILE_MASTER_ID', 'facebook-profile-master');
 define('FACEBOOK_PROFILE_MASTER_NICK', 'Facebook Profile Master');
 
 // HOOK WIDGET
-require_once('includes/facebook-profile-master-widget.php');
+require_once( dirname( __FILE__ ) . '/includes/facebook-profile-master-widget.php');
 
 // HOOK INVITATION
 
 // HOOK SHORTCODE
 
 	class facebook_profile_master{
-		/** function/method
-		* Usage: return absolute file path
-		* Arg(1): string
-		* Return: string
-		*/
-		public static function file_path($file)
-		{
-			return ABSPATH.'wp-content/plugins/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)).$file;
-		}
 		/** function/method
 		* Usage: hooking the plugin options/settings
 		* Arg(0): null
@@ -83,7 +74,7 @@ require_once('includes/facebook-profile-master-widget.php');
 			}
 			$plugin_id = FACEBOOK_PROFILE_MASTER_ID;
 			// display options page
-			include(self::file_path('includes/facebook-profile-master-admin.php'));
+			include( dirname( __FILE__ ) . '/includes/facebook-profile-master-admin.php');
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -93,7 +84,7 @@ require_once('includes/facebook-profile-master-widget.php');
 		 public static function facebook_profile_master_widget()
 		{
 			// display widget page
-			include(self::file_path('includes/facebook-profile-master-widget.php'));
+			include( dirname( __FILE__ ) . '/includes/facebook-profile-master-widget.php');
 		}
 		/** function/method
 		* Usage: filtering the content
@@ -121,7 +112,6 @@ require_once('includes/facebook-profile-master-widget.php');
 		{
 		add_action('admin_init', array('facebook_profile_master', 'facebook_profile_master_register'));
 		add_action('admin_menu', array('facebook_profile_master', 'menu'));
-		
 		}
 	add_filter('the_content', array('facebook_profile_master', 'content_with_quote'));
 endif;
