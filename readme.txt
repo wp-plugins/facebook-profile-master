@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, techgasp, shortcode, facebook, facebook profile, facebook user, facebook badge, facebook follow, facebook photo, facebook profile badge, facebook profile photo
 Requires at least: 3.5
-Tested up to: 3.7.1
-Stable tag: 4.0.2
+Tested up to: 3.8
+Stable tag: 4.1
 License: GPLv2 or later
 
 Facebook Profile Master gives you full control over all Facebook User Profile plugins, Facebook User Badges and Facebook Follow Button.
@@ -105,6 +105,10 @@ Please update to latest plugin version. Up-to-date API's are available
 
 
 == Changelog ==
+
+= 4.1 =
+* Wordpress 3.8 Ready
+* Minor tweaks related to new stock buttons
 
 = 4.0.2 =
 * Faster Background Updater
