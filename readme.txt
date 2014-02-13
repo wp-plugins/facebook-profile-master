@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, techgasp, shortcode, facebook, facebook profile, facebook user, facebook badge, facebook follow, facebook photo, facebook profile badge, facebook profile photo
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.1
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Facebook Profile Master gives you full control over all Facebook User Profile plugins, Facebook User Badges and Facebook Follow Button.
@@ -21,6 +21,8 @@ The plugin uses the new Facebook API and is built-in html5 and iframe. Once agai
 
 Main Features: The viral plugin for facebook user profiles - Asynchronous Load - Built-in html5- No Javascript - Profile Badge - Photo Badge - Like Badge - Page Badge - Follow Button- Shortcode Framework ready, to publish inside pages and posts
 
+Both the widget and the shortcode framework are fully mobile responsive, a must for any professional website
+
 **Facebook User Profiles for Wordpress**
 
 IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
@@ -28,18 +30,36 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 **LITE Version Contains:**
 
-* Display or hide Widget Title
-* Facebook Follow Button
+* Display, Hide or Change any Widget Title
+
+* Facebook Profile Master Buttons Widget:
+* Follow Button let's people subscribe to your public updates
+* Perfect to gather profile subscribers if you use your Facebook User Profile as a professional activity
 
 **ADVANCED Version Contains:**
 
-* Display or hide Widget Title
-* Facebook Profile Badge
-* Facebook Photo Badge
-* Facebook Like Badge
-* Facebook Page Badge
-* Facebook Follow Button
-* Shortcode Framework v2. Publish widget inside pages and posts
+* Fully Mobile Responsive
+* Display, Hide or Change any Widget Title
+
+* Facebook Profile Master Buttons Widget:
+* Follow Button let's people subscribe to your public updates
+* Perfect to gather profile subscribers if you use your Facebook User Profile as a professional activity
+
+Facebook Profile Master Profile Badge Widget:
+* The Widget that shares your facebook user information
+
+Facebook Profile Master Photo Badge Widget:
+* The widget that shares your facebook photos
+
+Facebook Profile Master Like Badge Widget:
+* The widget that shows off your favourite facebook pages
+
+Facebook Profile Master Page Badge Widget:
+* The widget that shares your Facebook page information
+
+
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
 **ONLINE DEMO**
@@ -58,9 +78,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Installation ==
 
-1. Use the Wordpress Installer, Updater.
-2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Facebook Profile Master" to configure the settings and your template widget position.
+1. Use the Wordpress Installer, Updater
+2. Activate in the "Plugins" admin panel
+3. Visit the "Widget Page | Facebook Master Widgets" to configure widgets settings and your template widget positions
 4. [Facebook Profile Master Documentation](http://wordpress.techgasp.com/facebook-profile-master-documentation)
 
 
@@ -78,16 +98,17 @@ No, the plugin is intended for Facebook User Profiles.
 = Issues with display =
 Please update to latest plugin version. Up-to-date API's are available
 
-= Where is the shortcode? =
-* Advanced Version contains the shortcode framework v2
-* Insert the shortcode into any page or post. [facebook-profile-master]
+= Insert Shortcode in Pages or Posts =
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [facebook-profile-master-un]
+* Insert the individual shortcode into any page or post. [facebook-profile-master]
 * [Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
-= What's this Shortcode Framework v2 =
+= What's this Shortcode Framework v3 =
 * It's a framework developed by TechGasp and built upon wordpress marvellous resources
 * Allows users to quickly and easily display plugins or widgets inside their pages and posts
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3/)
 
 = Need More Help =
 * [Facebook Profile Master Documentation](http://wordpress.techgasp.com/facebook-profile-master-documentation)
@@ -96,15 +117,28 @@ Please update to latest plugin version. Up-to-date API's are available
 
 == Screenshots ==
 
-1. Widget With Facebook Profile Badge and Follow Button
-2. Widget With Facebook Photo Badge and Follow Button
-3. Widget With Facebook Like Badge and Follow Button
-4. Widget With Facebook Page Badge and Follow Button
-5. Widget With Facebook Follow Button
-6. Advanced Widget inside pages and posts with shortcode framework
+1. Facebook Profile Master Profile Widget and Buttons Widget
+2. Facebook Profile Master Photo Widget and Buttons Widget
+3. Facebook Profile Master Like Widget and Buttons Widget
+4. Facebook Profile Master Page Widget and Buttons Widget
+5. Facebook Profile Master Buttons Widget
+6. Advanced Shortcode inside pages and posts with shortcode framework
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Facebook API
+* New Facebook Profile Master Buttons Widget
+* New Facebook Profile Master Profile Widget
+* New Facebook Profile Master Photo Widget
+* New Facebook Profile Master Like Widget
+* New Facebook Profile Master Page Widget
 
 = 4.1 =
 * Wordpress 3.8 Ready
@@ -146,8 +180,11 @@ Please update to latest plugin version. Up-to-date API's are available
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new TechGasp Plugin Framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Implemented a better framework
