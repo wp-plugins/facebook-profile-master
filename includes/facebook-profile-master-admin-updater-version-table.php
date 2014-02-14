@@ -8,7 +8,7 @@ class facebook_profile_master_admin_updater_version_table extends WP_List_Table 
 	 * @return string, echo the markup of the rows
 	 */
 function display() {
-global $vine_plugin_slug;
+global $facebook_profile_plugin_slug;
 ?>
 <table class="widefat fixed" cellspacing="0">
 	<thead>
@@ -32,8 +32,8 @@ if(get_site_option( 'facebook_profile_master_installed_version')  == get_site_op
 	echo '</td>';
 }
 else{
-$vine_plugin_slug = 'facebook-profile-master/facebook-profile-master.php';
-	echo '<a class="button-primary" href="'.wp_nonce_url( self_admin_url('update.php?action=upgrade-plugin&plugin=') . $vine_plugin_slug, 'upgrade-plugin_' . $vine_plugin_slug) .'" title="Update">Update</a></td>';
+$facebook_profile_plugin_slug = 'facebook-profile-master/facebook-profile-master.php';
+	echo '<a class="button-primary" href="'.wp_nonce_url( self_admin_url('update.php?action=upgrade-plugin&plugin=') . $facebook_profile_plugin_slug, 'upgrade-plugin_' . $facebook_profile_plugin_slug) .'" title="Update">Update</a></td>';
 }
 ?>
 			</th>
