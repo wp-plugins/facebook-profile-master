@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, techgasp, shortcode, facebook, facebook profile, facebook user, facebook badge, facebook follow, facebook photo, facebook profile badge, facebook profile photo
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 4.3.5
 License: GPLv2 or later
 
 Facebook Profile Master gives you full control over all Facebook User Profile plugins, Facebook User Badges and Facebook Follow Button.
@@ -45,27 +45,28 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Follow Button let's people subscribe to your public updates
 * Perfect to gather profile subscribers if you use your Facebook User Profile as a professional activity
 
-Facebook Profile Master Profile Badge Widget:
+*Facebook Profile Master Profile Badge Widget:
 * The Widget that shares your facebook user information
 
-Facebook Profile Master Photo Badge Widget:
+*Facebook Profile Master Photo Badge Widget:
 * The widget that shares your facebook photos
 
-Facebook Profile Master Like Badge Widget:
+*Facebook Profile Master Like Badge Widget:
 * The widget that shows off your favourite facebook pages
 
-Facebook Profile Master Page Badge Widget:
+*Facebook Profile Master Page Badge Widget:
 * The widget that shares your Facebook page information
 
-
-* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
-* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
+* TechGasp Shortcode Framework v3:
+* Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
+* Individual Shortcode for each page or post, individual customized shortcode per page or post
+* Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
 * [Advanced Version Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
 **ONLINE DEMO**
 
 * Right of the page, sidebar widget
-* Inside the post, with shortcode framework v2
+* Inside the post, with shortcode framework
 * [Demo Link](http://wordpress.techgasp.com/facebook-profile-master/)
 
 **More High Quality Plugins?**
@@ -80,7 +81,7 @@ Facebook Profile Master Page Badge Widget:
 
 1. Use the Wordpress Installer, Updater
 2. Activate in the "Plugins" admin panel
-3. Visit the "Widget Page | Facebook Master Widgets" to configure widgets settings and your template widget positions
+3. Visit the "Widget Page | Facebook Profile Master Widgets" to configure widgets settings and your template widget positions
 4. [Facebook Profile Master Documentation](http://wordpress.techgasp.com/facebook-profile-master-documentation)
 
 
@@ -126,6 +127,17 @@ Please update to latest plugin version. Up-to-date API's are available
 
 
 == Changelog ==
+
+= 4.3.5 =
+* TechGasp Plugin Framework v3 Improvements and Upgrades
+* New Universal Shortcode Options:
+* Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page and post
+* Option to Automatically only show the shortcode in Posts, not Pages
+* Option to Automatically show the shortcode After the Title or After the Content
+* Improved TechGasp Mobile Responsiveness
+* Code clean up and speed up
+* Fixed a couple of warnings
+* Improved Updater
 
 = 4.3 =
 * New TechGasp Plugin Framework
