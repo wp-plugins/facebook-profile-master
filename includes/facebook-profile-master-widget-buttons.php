@@ -26,9 +26,17 @@ function widget( $args, $instance ) {
 		// Display the widget title
 	if ( $facebook_profile_title ){
 		if (empty ($facebook_profile_title_new)){
-		$facebook_profile_title_new = get_option('facebook_profile_master_name');
-		}
+			if(is_multisite()){
+			$facebook_profile_title_new = get_site_option('facebook_profile_master_name');
+			}
+			else{
+			$facebook_profile_title_new = get_option('facebook_profile_master_name');
+			}
 		echo $before_title . $facebook_profile_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $facebook_profile_title_new . $after_title;
+		}
 	}
 	else{
 	}
@@ -85,7 +93,7 @@ function widget( $args, $instance ) {
 	&nbsp;
 	<b>Facebook Profile Master Website</b>
 	</p>
-	<p><a class="button-secondary" href="http://wordpress.techgasp.com/facebook-profile-master/" target="_blank" title="Facebook Profile Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/facebook-profile-master-documentation/" target="_blank" title="Facebook Profile Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/facebook-profile-master/" target="_blank" title="Visit Website">Get Add-ons</a></p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/facebook-profile-master/" target="_blank" title="Facebook Profile Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/facebook-profile-master-documentation/" target="_blank" title="Facebook Profile Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/facebook-profile-master/" target="_blank" title="Get Add-ons">Get Add-ons</a></p>
 	<?php
 	}
  }

@@ -2,7 +2,7 @@
 /**
 Plugin Name: Facebook Profile Master
 Plugin URI: http://wordpress.techgasp.com/facebook-profile-master/
-Version: 4.3.6
+Version: 4.4.1.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: facebook-profile-master
@@ -25,12 +25,16 @@ License: GPL2 or later
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('facebook_profile_master')) :
+///////DEFINE DIR///////
+define( 'FACEBOOK_PROFILE_MASTER_DIR', plugin_dir_path( __FILE__ ) );
+///////DEFINE URL///////
+define( 'FACEBOOK_PROFILE_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
-define('FACEBOOK_PROFILE_MASTER_ID', 'facebook-profile-master');
+define( 'FACEBOOK_PROFILE_MASTER_ID', 'facebook-profile-master');
 ///////DEFINE VERSION///////
-define( 'facebook_profile_master_VERSION', '4.3.6' );
+define( 'FACEBOOK_PROFILE_MASTER_VERSION', '4.4.1.4' );
 global $facebook_profile_master_version, $facebook_profile_master_name;
-$facebook_profile_master_version = "4.3.6"; //for other pages
+$facebook_profile_master_version = "4.4.1.4"; //for other pages
 $facebook_profile_master_name = "Facebook Profile Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'facebook_profile_master_installed_version', $facebook_profile_master_version );
@@ -53,11 +57,10 @@ require_once( dirname( __FILE__ ) . '/includes/facebook-profile-master-admin-upd
 // HOOK WIDGET BUTTONS
 require_once( dirname( __FILE__ ) . '/includes/facebook-profile-master-widget-buttons.php');
 
-
 class facebook_profile_master{
 //REGISTER PLUGIN
 public static function facebook_profile_master_register(){
-register_setting(FACEBOOK_PROFILE_MASTER_ID, 'tsm_quote');
+register_activation_hook( __FILE__, array( __CLASS__, 'facebook_profile_master_activate' ) );
 }
 public static function content_with_quote($content){
 $quote = '<p>' . get_option('tsm_quote') . '</p>';
@@ -65,10 +68,15 @@ $quote = '<p>' . get_option('tsm_quote') . '</p>';
 }
 //SETTINGS LINK IN PLUGIN MANAGER
 public static function facebook_profile_master_links( $links, $file ) {
-	if ( $file == plugin_basename( dirname(__FILE__).'/facebook-profile-master.php' ) ) {
-		$links[] = '<a href="' . admin_url( 'admin.php?page=facebook-profile-master' ) . '">'.__( 'Settings' ).'</a>';
+if ( $file == plugin_basename( dirname(__FILE__).'/facebook-profile-master.php' ) ) {
+		if( is_network_admin() ){
+		$techgasp_plugin_url = network_admin_url( 'admin.php?page=facebook-profile-master' );
+		}
+		else {
+		$techgasp_plugin_url = admin_url( 'admin.php?page=facebook-profile-master' );
+		}
+	$links[] = '<a href="' . $techgasp_plugin_url . '">'.__( 'Settings' ).'</a>';
 	}
-
 	return $links;
 }
 
@@ -100,8 +108,9 @@ update_option( 'facebook_profile_master_newest_version', $r->new_version );
 }
 }
 }
-		// Advanced Updater
-
+//Remove WP Updater
+// Advanced Updater
+//Updater Label Message
 //END CLASS
 }
 if ( is_admin() ){
