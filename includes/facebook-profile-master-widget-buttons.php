@@ -66,7 +66,7 @@ function widget( $args, $instance ) {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['facebook_profile_title'], true ); ?> id="<?php echo $this->get_field_id( 'facebook_profile_title' ); ?>" name="<?php echo $this->get_field_name( 'facebook_profile_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'facebook_profile_title' ); ?>"><b><?php _e('Display Widget Title', 'facebook_profile_master'); ?></b></label></br>
@@ -76,9 +76,9 @@ function widget( $args, $instance ) {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'facebook_profile_title_new' ); ?>" name="<?php echo $this->get_field_name( 'facebook_profile_title_new' ); ?>" value="<?php echo $instance['facebook_profile_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_facebook_follow'], true ); ?> id="<?php echo $this->get_field_id( 'show_facebook_follow' ); ?>" name="<?php echo $this->get_field_name( 'show_facebook_follow' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_facebook_follow' ); ?>"><b><?php _e('Display Facebook Follow Button', 'facebook_profile_master'); ?></b></label></br>
@@ -87,9 +87,9 @@ function widget( $args, $instance ) {
 	<label for="<?php echo $this->get_field_id( 'facebook_user_page' ); ?>"><?php _e('insert Facebook Profile link:', 'facebook_profile_master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'facebook_user_page' ); ?>" name="<?php echo $this->get_field_name( 'facebook_user_page' ); ?>" value="<?php echo $instance['facebook_user_page']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b>Facebook Profile Master Website</b>
 	</p>
