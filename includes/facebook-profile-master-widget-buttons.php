@@ -10,7 +10,7 @@ class facebook_profile_master_widget_buttons extends WP_Widget {
 	function facebook_profile_master_widget_buttons() {
 	$widget_ops = array( 'classname' => 'FB Profile Master - Buttons Widget', 'description' => __('FB Profile Master - Buttons Widget is perfect to let People Subscribe to your Public Updates. ', 'facebook_profile_master') );
 	$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'facebook_profile_master_widget_buttons' );
-	$this->WP_Widget( 'facebook_profile_master_widget_buttons', __('FB Profile Master - Buttons Widget', 'facebook_profile_master'), $widget_ops, $control_ops );
+	parent::__construct( 'facebook_profile_master_widget_buttons', __('FB Profile Master - Buttons Widget', 'facebook_profile_master'), $widget_ops, $control_ops );
 	}
 	
 function widget( $args, $instance ) {
